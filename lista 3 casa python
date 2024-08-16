@@ -1,0 +1,77 @@
+exercicios lista 3 casa em python
+
+1)
+print("numeros de 1 a 20")
+N = 1
+while N <= 20:
+    print(N)
+
+    N += 1
+
+
+
+2)
+print("numeros pares entre 20 e 1")
+N = 20
+while N >= 1:
+    if N % 2 == 0:
+
+      print(N)
+
+    N -= 1
+
+
+
+
+
+3)
+print("numeros impares e pares entre 1 e 20")
+N = 1
+while N <= 20:
+    if N % 2 == 0:
+      print(f"{N} é par")
+    else:
+       print(f"{N} é impar")
+
+    N += 1
+
+
+
+
+4)
+print("numeros impares de 1 a 20")
+
+for N in range(1,21,2):
+    print(N)
+
+
+5)
+print("numeros impares de 1 a 20")
+
+for N in range(1,19,2):
+    print(N)
+
+
+
+
+6)
+print("numeros pares e impares de 20 a 1")
+
+for N in range(20,0,-1):
+    if N % 2==0:
+        print(f"{N} é par")
+    else:
+        print(f"{N} é impar")
+
+
+
+
+7)
+print("números de 1 a 20")
+N= 1 
+
+while True:  
+    print(N)  
+    N += 1  
+    if N > 20:  
+        break  
