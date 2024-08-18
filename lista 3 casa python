@@ -75,3 +75,109 @@ while True:
     N += 1  
     if N > 20:  
         break  
+
+
+
+
+8)
+print("numeros pares entre 1 e 20")
+N = 1  
+
+while True:
+    if N % 2 == 0: 
+        print(N)  
+    N += 1  
+    if N > 20: 
+        break  
+
+
+
+
+
+9)
+print("numeros impares e pares de 1 a 20") 
+
+N = 1
+
+while True:
+    if N % 2 == 0:
+        print(f"{N} é par")
+    else:
+        print(f"{N} é impar")
+    N += 1
+    
+    if N > 20:
+        break
+
+
+
+
+
+
+10)
+def calcular():
+    while True:
+       
+        operador = input("Escolha uma operação (+, -, *, /) ou S para sair: ").strip().upper()
+
+       
+        if operador == 'S':
+            print("Saindo do programa.")
+            break
+
+       
+        if operador in ('+', '-', '*', '/'):
+            try:
+                num1 = float(input("digite o primeiro número: "))
+                num2 = float(input("digite o segundo número: "))
+                
+               
+                if operador == '+':
+                    resultado = num1 + num2
+                elif operador == '-':
+                    resultado = num1 - num2
+                elif operador == '*':
+                    resultado = num1 * num2
+                elif operador == '/':
+                    if num2 != 0:
+                        resultado = num1 / num2
+                    else:
+                        print("erro, divisão por zero.")
+                        continue
+                
+                
+                print(f"resultado: {resultado:.2f}")
+
+            except ValueError:
+                print("erro, Entrada inválida. Por favor, digite números válidos.")
+
+        else:
+            print(" inválido. tente novamente.")
+
+
+calcular()
+
+
+
+
+
+
+
+11)
+def tabuada():
+    try:
+        numero = int(input("digite o número para a tabuada: "))
+        print(f"tabuada do {numero}:")
+
+        for N in range(11):
+            resultado = numero * N
+            print(f"{numero} x {N} = {resultado}")
+    
+    except ValueError:
+        print("inválido, digite um número inteiro.")
+        
+tabuada()
+
+
+
+
