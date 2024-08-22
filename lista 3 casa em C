@@ -1,0 +1,158 @@
+1)
+#include <stdio.h>
+
+int main() {
+    int N = 1; 
+    while (N <= 20) {  
+        printf("%d\n", N);  
+        N++;  
+    }
+
+    return 0; 
+}
+
+
+
+
+
+2)
+#include <stdio.h>
+
+int main() {
+    int N = 20;  
+
+    while (N >= 1) { 
+        if (N % 2 == 0) {
+            printf("%d\n", N);  
+        }
+        N--;  
+    }
+
+    return 0; 
+}
+
+
+
+
+
+
+
+
+3)
+#include <stdio.h>
+
+int main() {
+    int N = 1;  
+
+    while (N <= 20) { 
+        if (N % 2 == 0) {  
+            printf("%d é par\n", N);  
+        } else {
+            printf("%d é ímpar\n", N);  
+        }
+        N++;  
+    }
+
+    return 0; 
+}
+
+
+
+
+4)
+#include <stdio.h>
+
+int main() {
+   
+    for (int N = 20; N >= 1; N--) {
+        printf("%d\n", N);  
+    }
+
+    return 0;  
+}
+
+
+
+
+
+
+
+
+
+5)
+#include <stdio.h>
+
+int main() {
+    
+    for (int N = 1; N <= 20; N += 2) {
+        printf("%d\n", N); 
+    }
+
+    return 0;  
+}
+
+
+
+
+
+
+
+
+
+
+6)
+#include <stdio.h>
+
+int main() {
+   
+    for (int N = 20; N >= 1; N--) {
+       
+        if (N % 2 == 0) {
+            printf("%d é par\n", N); 
+        } else {
+            printf("%d é ímpar\n", N); 
+        }
+    }
+
+    return 0;  
+}
+
+
+
+
+
+7)
+#include <stdio.h>
+
+int main() {
+    int N = 1; 
+
+    do {
+        printf("%d\n", N);  
+        N++;  
+    } while (N <= 20); 
+
+    return 0;  
+}
+
+
+
+
+
+
+8)
+#include <stdio.h>
+
+int main() {
+    int N = 1;  
+
+    do {
+       
+        if (N % 2 == 0) {
+            printf("%d\n", N);  
+        }
+        N++;  
+    } while (N <= 20); 
+
+    return 0;  
+}
