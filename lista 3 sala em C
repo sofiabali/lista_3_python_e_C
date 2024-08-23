@@ -17,6 +17,9 @@ int main() {
 
 
 
+
+
+
 2)
 #include <stdio.h>
 
@@ -31,4 +34,221 @@ int main() {
 
     return 0; 
 }
+
+
+
+
+
+
+
+
+
+3)
+#include <stdio.h>
+
+int main() {
+    int numero;
+    
+    printf("digite um número para exibir a sua tabuada: ");
+    scanf("%d", &numero);
+    
+ 
+    for (int N = 1; N <= 10; N++) {
+        printf("%d X %d = %d\n", numero, N, numero * N);
+    }
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+4)
+#include <stdio.h>
+
+int main() {
+    int N;
+
+    printf("digite um número (menor ou igual a 50): ");
+    scanf("%d", &N);
+
+    if (N > 50) {
+        printf("o número deve ser menor ou igual a 50.\n");
+        return 1;
+    }
+
+    int produto = N;
+
+    while (produto < 250) {
+        printf("%d\n", produto);
+        produto *= 3; 
+    }
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+5)
+#include <stdio.h>
+
+int main() {
+    int Contador = 1;
+
+    while (Contador < 200) {
+
+        if (Contador % 4 == 0) {
+            printf("%d\n", Contador);
+        }
+
+        Contador++;
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+6)
+#include <stdio.h>
+
+int main() {
+
+    for (int i = 15; i <= 200; i++) {
+       
+        int quadrado = i * i;
+
+        printf("o quadrado de %d é %d\n", i, quadrado);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+7)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int base = 3;
+
+    for (int elevado = 0; elevado <= 15; elevado++) {
+
+        int resultado = (int)pow(base, elevado);
+        
+        printf("3 elevado a %d = %d\n", elevado, resultado);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+8)
+#include <stdio.h>
+
+int main() {
+    int termos = 15;
+    int a = 1, b = 1, c;
+
+    printf("%d\n", a);
+
+    if (termos > 1) {
+        printf("%d\n", b);
+    }
+
+    for (int i = 3; i <= termos; i++) {
+        c = a + b;  
+        printf("%d\n", c);
+        a = b;     
+        b = c;      
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+9)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double base, expoente, resultado;
+
+    printf("digite a base (N): ");
+    scanf("%lf", &base);
+
+    printf("digite o expoente (M): ");
+    scanf("%lf", &expoente);
+
+    resultado = pow(base, expoente);
+
+    printf("%.2lf elevado a %.2lf é %.2lf\n", base, expoente, resultado);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+10)
+#include <stdio.h>
+
+int main() {
+    int soma = 0;
+
+    for (int N = 1; N <= 500; N++) {
+
+        if (N % 2 == 0) {
+
+            soma += N;
+        }
+    }
+
+    printf("O somatório dos valores pares entre 1 e 500 é %d\n", soma);
+
+    return 0;
+}
+
+
+
+
+
+
 
